@@ -50,8 +50,9 @@ For example, one plugin that could:
  1. [metalsmith-transform](https://github.com/yeojz/metalsmith-transform)
  1. [metalsmith-elevate](https://github.com/tylersticka/metalsmith-elevate)
  1. [metalsmith-date-in-filename](https://github.com/sanx/metalsmith-date-in-filename)
- 1. [metalsmith-concat-convention](https://github.com/RobLoach/metalsmith-concat-convention) **(Maybe)**
+ 1. [metalsmith-concat-convention](https://github.com/RobLoach/metalsmith-concat-convention) *<sub>(Maybe)</sub>*
  1. [metalsmith-copy](https://github.com/mattwidmann/metalsmith-copy)
+ 1. [metalsmith-filenames](https://github.com/MoOx/metalsmith-filenames)
 
 ## Project Stuff
 
@@ -59,3 +60,19 @@ For example, one plugin that could:
 
  * It looks like the native [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) class supports any of the requirements that may be needed (EG: *lookbehind*/*lookahead*), but I'll do some more digging/testing later to verify it's suitable.
  * Depending on what task the plugin is being used for, or what data format it's transpiling, the exact npm libraries being required may vary. Thus, it may be ideal to define the plugins *not* required for *any* of the tasks as the npm packages `[optionaldependencies](https://docs.npmjs.com/files/package.json#optionaldependencies)` (or any other better-suited method).
+
+#### *Initial* Features
+
+Since this is being created to accomplish some tasks needed by **[geekwiki/blog.git](https://github.com/geekwiki/blog)**, the initial deployment will have a limited amount of features, which will include:
+
+ 1. Adding the filename of the source file being processed to the metadata (similar to [*metalsmith-filenames*](https://github.com/MoOx/metalsmith-filenames))
+ 1. 
+
+#### *Definite* Later Features
+
+
+#### *Possible* Later Features
+
+ 1. Retrieve source data via cURL (Similar: [*metalsmith-remote-json-to-files*](https://github.com/okonet/metalsmith-remote-json-to-files))
+ 1. In addition to being able to convert data, being able to decode/encode/re-encode files from would be useful (Similar: [*metalsmith-transformer*](https://github.com/HolyMeekrob/metalsmith-transformer))
+ 1. Convert data to spreadsheets (EG: *csv*, *xls*, *xlsx*, etc). This would obviously require the data to be formatted properly, but may be useful
