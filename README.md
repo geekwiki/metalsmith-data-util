@@ -1,4 +1,16 @@
-# Placeholder for a Metalsmith plugin
+# Metalsmith Data Utility
+
+*First*.. before you say anything, *yes*, I realize the name **metalsmith-data-utility** is anything but descriptive. This is being created to easily accomplish a very specific *[set of tasks](https://github.com/geekwiki/metalsmith-data-util#purpose)*:
+
+1. **Transpile** serialized data files (such as `json`, `xml` and `yaml`) to/from different formats
+1. **Move** existing folders/files
+1. **Delete** existing folders/files
+1. **Rename** existing folders/files
+1. **Create** new files with custom serialized data
+
+And there will (more than likely) be other functionality added to later versions. I wanted to be able to add other such functionality without conflicting the name. 
+
+That, and it was simple and available :-)
 
 ## Description
 
