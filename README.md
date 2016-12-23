@@ -7,7 +7,7 @@ A [*Metalsmith*](http://www.metalsmith.io/) plugin used for converting common da
 
 ## Purpose 
 
-One of *Metalsmiths* pros is also one of its cons (at least in my book), and thats the significant amount of plugins out there for it. At this time, I found [**483** indexed ](https://www.npmjs.com/search?q=metalsmith), [**877** in Github](https://github.com/search?utf8=%E2%9C%93&q=metalsmith) (Well, now **87_8_**), and even [**198** on Metalsmiths homepage](http://www.metalsmith.io/#the-community-plugins). I've always thought *"The more plugins, the better!"*, but thats only provided that the plugins themselves are powerful enough that they aren't *just barely* out of reach of the ability desired or required by developers on other projects, which seems to be the case for a large amount of these plugins.
+One of *Metalsmiths* pros is also one of its cons (at least in my book), and thats the significant amount of plugins out there for it. At this time, I found [**483** indexed ](https://www.npmjs.com/search?q=metalsmith), [**877** in Github](https://github.com/search?utf8=%E2%9C%93&q=metalsmith) (Well, now *87***8**), and even [**198** on Metalsmiths homepage](http://www.metalsmith.io/#the-community-plugins). I've always thought *"The more plugins, the better!"*, but thats only provided that the plugins themselves are powerful enough that they aren't *just barely* out of reach of the ability desired or required by developers on other projects, which seems to be the case for a large amount of these plugins.
 
 For example, one plugin that could:
 
@@ -26,22 +26,24 @@ For example, one plugin that could:
 
 ### Succeedable Metalsmith Plugins
 
-[metalsmith-to-json](https://github.com/hellotoby/metalsmith-to-json)
-[metalsmith-writemetadata](https://github.com/Waxolunist/metalsmith-writemetadata)
-[metalsmith-renamer](https://github.com/alex-ketch/metalsmith-renamer)
-[metalsmith-paths](https://github.com/ahmadnassri/metalsmith-paths)
-[metalsmith-packagejson](https://www.npmjs.com/package/metalsmith-packagejson)
-[metalsmith-move-up](https://github.com/mcdonnelldean/metalsmith-move-up)
-[metalsmith-move-remove](https://github.com/carlnordenfelt/metalsmith-move-remove)
-[metalsmith-json-to-files](https://github.com/woodyrew/metalsmith-json-to-files)
-[metalsmith-jekyll-dates](https://github.com/fortes/metalsmith-jekyll-dates)
-[metalsmith-transform](https://github.com/yeojz/metalsmith-transform)
-[metalsmith-elevate](https://github.com/tylersticka/metalsmith-elevate)
-[metalsmith-date-in-filename](https://github.com/sanx/metalsmith-date-in-filename)
-[metalsmith-concat-convention](https://github.com/RobLoach/metalsmith-concat-convention) **(Maybe)**
-[metalsmith-copy](https://github.com/mattwidmann/metalsmith-copy)
+ 1. [metalsmith-to-json](https://github.com/hellotoby/metalsmith-to-json)
+ 1. [metalsmith-writemetadata](https://github.com/Waxolunist/metalsmith-writemetadata)
+ 1. [metalsmith-renamer](https://github.com/alex-ketch/metalsmith-renamer)
+ 1. [metalsmith-paths](https://github.com/ahmadnassri/metalsmith-paths)
+ 1. [metalsmith-packagejson](https://www.npmjs.com/package/metalsmith-packagejson)
+ 1. [metalsmith-move-up](https://github.com/mcdonnelldean/metalsmith-move-up)
+ 1. [metalsmith-move-remove](https://github.com/carlnordenfelt/metalsmith-move-remove)
+ 1. [metalsmith-json-to-files](https://github.com/woodyrew/metalsmith-json-to-files)
+ 1. [metalsmith-jekyll-dates](https://github.com/fortes/metalsmith-jekyll-dates)
+ 1. [metalsmith-transform](https://github.com/yeojz/metalsmith-transform)
+ 1. [metalsmith-elevate](https://github.com/tylersticka/metalsmith-elevate)
+ 1. [metalsmith-date-in-filename](https://github.com/sanx/metalsmith-date-in-filename)
+ 1. [metalsmith-concat-convention](https://github.com/RobLoach/metalsmith-concat-convention) **(Maybe)**
+ 1. [metalsmith-copy](https://github.com/mattwidmann/metalsmith-copy)
 
+## Project Stuff
 
-## P.S.
+### Details
 
-I'm not developing this plugin in an attempt to boot anyone off of any imaginary *Metalsmith plugin throne*, 
+ * It looks like the native [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) class supports any of the requirements that may be needed (EG: *lookbehind*/*lookahead*), but I'll do some more digging/testing later to verify it's suitable.
+ * Depending on what task the plugin is being used for, or what data format it's transpiling, the exact npm libraries being required may vary. Thus, it may be ideal to define the plugins *not* required for *any* of the tasks as the npm packages `[optionaldependencies](https://docs.npmjs.com/files/package.json#optionaldependencies)` (or any other better-suited method).
